@@ -1,5 +1,5 @@
 // Hand-over block from Claude or other AI assistants:
-// === TEAMLIMIT-AUFGABE === … --- PROMPT --- … === ENDE ===  (German or English keys)
+// === TEAMLIMIT-TASK === … --- PROMPT --- … === END ===  (English or German keys and markers)
 const TL_EFFORT = {
 	S: "S – up to 25 % of a 5-h window",
 	M: "M – up to 50 % of a 5-h window",
@@ -57,7 +57,7 @@ function tl_import_dialog(on_values) {
 			{
 				fieldname: "text",
 				fieldtype: "Long Text",
-				label: __("Paste the block from “=== TEAMLIMIT-AUFGABE ===” to “=== ENDE ===”"),
+				label: __("Paste the block from “=== TEAMLIMIT-TASK ===” to “=== END ===”"),
 				reqd: 1,
 			},
 		],

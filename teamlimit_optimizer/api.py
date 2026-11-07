@@ -1,5 +1,5 @@
 # Copyright (c) 2026, SRG - Systemhaus GmbH and contributors
-# For license information, please see license.txt
+# For license information, please see LICENSE
 
 import json
 import os
@@ -251,11 +251,35 @@ def setup_ingest_user():
 	return {"user": email}
 
 
+REPO = "SRGgmbh/frappe-teamlimit_optimizer"
+BRANCH = "version-16"
+RAW = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/scripts"
+
+# the reporting scripts live in the repository root, folder "scripts"
 SCRIPT_FILES = {
-	"windows": ("Teamlimit-Report.ps1", "Teamlimit-Report.ps1", "text/plain"),
-	"linux": ("teamlimit-report.sh", "teamlimit-report.sh", "text/x-shellscript"),
-	"task": ("Teamlimit-Optimizer-Task.xml", "Teamlimit-Optimizer-Task.xml", "application/xml"),
+	"windows": ("windows/Teamlimit-Report.ps1", "Teamlimit-Report.ps1"),
+	"linux": ("linux/teamlimit-report.sh", "teamlimit-report.sh"),
+	"task": ("windows/Teamlimit-Optimizer-Task.xml", "Teamlimit-Optimizer-Task.xml"),
 }
+
+
+def _ingest_auth():
+	settings = frappe.get_single("Teamlimit Settings")
+	if not settings.ingest_api_key:
+		frappe.throw(_("Please set up the ingest user first."))
+	return f"token {settings.ingest_api_key}:{settings.get_password('ingest_api_secret')}"
+
+
+@frappe.whitelist()
+def get_install_commands():
+	"""One-line install commands for Windows and Linux with this site's address and the ingest key."""
+	frappe.only_for("System Manager")
+	url = frappe.utils.get_url()
+	auth = _ingest_auth()
+	return {
+		"windows": f"& ([scriptblock]::Create((irm {RAW}/install-windows.ps1))) -FrappeUrl \"{url}\" -IngestAuth \"{auth}\"",
+		"linux": f"curl -fsSL {RAW}/install-linux.sh | bash -s -- --url \"{url}\" --auth \"{auth}\"",
+	}
 
 
 @frappe.whitelist()
@@ -264,19 +288,13 @@ def download_script(kind="windows"):
 	frappe.only_for("System Manager")
 	if kind not in SCRIPT_FILES:
 		frappe.throw(_("Unknown script"))
-	template, filename, _mime = SCRIPT_FILES[kind]
-	path = frappe.get_app_path("teamlimit_optimizer", "templates", "scripts", template)
-	with open(path, encoding="utf-8") as f:
+	template, filename = SCRIPT_FILES[kind]
+	path = os.path.join(os.path.dirname(frappe.get_app_path("teamlimit_optimizer")), "scripts", template)
+	with open(path, encoding="utf-8-sig") as f:
 		content = f.read()
 
 	if kind != "task":
-		settings = frappe.get_single("Teamlimit Settings")
-		if not settings.ingest_api_key:
-			frappe.throw(_("Please set up the ingest user first."))
-		secret = settings.get_password("ingest_api_secret")
-		content = content.replace("__FRAPPE_URL__", frappe.utils.get_url()).replace(
-			"__INGEST_AUTH__", f"token {settings.ingest_api_key}:{secret}"
-		)
+		content = content.replace("__FRAPPE_URL__", frappe.utils.get_url()).replace("__INGEST_AUTH__", _ingest_auth())
 
 	frappe.response["filename"] = filename
 	frappe.response["filecontent"] = content.encode("utf-8-sig" if kind == "windows" else "utf-8")

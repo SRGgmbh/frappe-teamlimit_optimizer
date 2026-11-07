@@ -155,6 +155,12 @@ msgstr "Kopiert"
 msgid "Copy"
 msgstr "Kopieren"
 
+msgid "Copy Linux command"
+msgstr "Linux-Befehl kopieren"
+
+msgid "Copy Windows command"
+msgstr "Windows-Befehl kopieren"
+
 msgid "Copy prompt"
 msgstr "Prompt kopieren"
 
@@ -329,6 +335,9 @@ msgstr "Rest bis Reset"
 msgid "Level"
 msgstr "Stufe"
 
+msgid "Linux – run as the user whose usage is reported:"
+msgstr "Linux – als der Benutzer ausführen, dessen Auslastung gemeldet wird:"
+
 msgid "Low"
 msgstr "Niedrig"
 
@@ -373,6 +382,9 @@ msgstr "Anzahl Claude-Benutzer im Team-Plan"
 
 msgid "Oct"
 msgstr "Okt"
+
+msgid "One-line install commands"
+msgstr "Install-Befehle"
 
 msgid "Only for Claude Team"
 msgstr "Nur für Claude Team"
@@ -419,8 +431,8 @@ msgstr "Eigenes Team"
 msgid "Pace"
 msgstr "Tempo"
 
-msgid "Paste the block from “=== TEAMLIMIT-AUFGABE ===” to “=== ENDE ===”"
-msgstr "Block von „=== TEAMLIMIT-AUFGABE ===“ bis „=== ENDE ===“ einfügen"
+msgid "Paste the block from “=== TEAMLIMIT-TASK ===” to “=== END ===”"
+msgstr "Block von „=== TEAMLIMIT-AUFGABE ===“ bis „=== ENDE ===“ einfügen (englische Blöcke werden ebenfalls erkannt)"
 
 msgid "Period"
 msgstr "Zeitraum"
@@ -530,7 +542,7 @@ msgstr "Ergebnis-Zusammenfassung"
 msgid "Result link (shared chat, artifact or file)"
 msgstr "Ergebnis-Link (geteilter Chat, Artefakt oder Datei)"
 
-msgid "Result summary (from the skill “aufgabe-abschliessen”)"
+msgid "Result summary (from the skill “pool-task-complete”)"
 msgstr "Ergebnis-Zusammenfassung (vom Skill „aufgabe-abschliessen“)"
 
 msgid "Right now nobody has at least {0} % free."
@@ -556,6 +568,9 @@ msgstr "Ingest-Benutzer einrichten"
 
 msgid "Settings"
 msgstr "Einstellungen"
+
+msgid "Show install commands"
+msgstr "Install-Befehle anzeigen"
 
 msgid "Standard"
 msgstr "Standard"
@@ -641,14 +656,20 @@ msgstr "Teamlimit-Trend"
 msgid "Teamlimit Year Comparison"
 msgstr "Jahresvergleich"
 
+msgid "Teamlimit task"
+msgstr "Teamlimit-Aufgabe"
+
+msgid "The commands contain the ingest key. Keep them internal."
+msgstr "Die Befehle enthalten den Ingest-Schlüssel. Nur intern weitergeben."
+
 msgid "The project “{0}” is not in the project list yet. Please add it under Administration > Claude Projects and select it."
 msgstr "Das Projekt „{0}“ steht noch nicht in der Projektliste. Bitte unter Verwaltung > Claude-Projekte anlegen und dann auswählen."
 
 msgid "The prompt is in the clipboard. Paste it in the Claude project with Ctrl+V and send it."
 msgstr "Der Prompt liegt in der Zwischenablage. In Claude im Projekt mit Strg+V einfügen und absenden."
 
-msgid "The reporting scripts send the usage of each Claude account to this site. They sign in as a separate ingest user that may only report and cannot read anything. Set it up once, then download the scripts – the address of this site and the key are already filled in. Keep the scripts internal."
-msgstr "Die Melde-Skripte senden die Auslastung jedes Claude-Kontos an diese Instanz. Sie melden sich als eigener Ingest-Benutzer an, der nur melden und nichts lesen darf. Einmal einrichten, dann die Skripte herunterladen – Adresse dieser Instanz und Schlüssel sind bereits eingetragen. Die Skripte nur intern weitergeben."
+msgid "The reporting scripts send the usage of each Claude account to this site. They sign in as a separate ingest user that may only report and cannot read anything. Set it up once, then use the one-line install commands or download the scripts – the address of this site and the key are already filled in. Keep commands and scripts internal."
+msgstr "Die Melde-Skripte senden die Auslastung jedes Claude-Kontos an diese Instanz. Sie melden sich als eigener Ingest-Benutzer an, der nur melden und nichts lesen darf. Einmal einrichten, dann die Install-Befehle verwenden oder die Skripte herunterladen – Adresse dieser Instanz und Schlüssel sind bereits eingetragen. Befehle und Skripte nur intern weitergeben."
 
 msgid "Thereof 100 %"
 msgstr "davon 100 %"
@@ -710,7 +731,7 @@ msgstr "Wochen der letzten 8 Wochen mit verfallenem Budget. „Aufgaben offen“
 msgid "What is unclear?"
 msgstr "Was ist unklar?"
 
-msgid "When the task is done, use the skill “aufgabe-abschliessen”."
+msgid "When the task is done, use the skill “pool-task-complete”."
 msgstr "Wenn die Aufgabe erledigt ist, nutze den Skill „aufgabe-abschliessen“."
 
 msgid "Who Can Help"
@@ -730,6 +751,9 @@ msgstr "Fenster diese Woche"
 
 msgid "Windows at Limit This Week"
 msgstr "Fenster am Limit diese Woche"
+
+msgid "Windows – run as administrator in PowerShell, once per computer or terminal server (also suitable as a GPO computer startup script):"
+msgstr "Windows – als Administrator in PowerShell ausführen, einmal pro Rechner bzw. Terminalserver (auch als GPO-Startskript geeignet):"
 
 msgid "Write it so that it works without any follow-up questions."
 msgstr "So formulieren, dass er ohne Rückfrage funktioniert."

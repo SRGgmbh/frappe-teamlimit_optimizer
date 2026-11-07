@@ -3,15 +3,22 @@
 # Reads the Claude usage of the current user and reports it to Frappe.
 # The Claude token never leaves the device; only e-mail, seat tier and percentages are sent.
 # Requires: bash, curl, python3. Run manually with visible output:  teamlimit-report.sh --test
+#
+# Address and key are either filled in when the script is downloaded from the Teamlimit Settings,
+# or read from ~/.config/teamlimit-optimizer/config (written by scripts/install-linux.sh).
 set -u
 FRAPPE_URL="__FRAPPE_URL__"
 INGEST_AUTH="__INGEST_AUTH__"
+CONF="${TEAMLIMIT_CONFIG:-$HOME/.config/teamlimit-optimizer/config}"
+if [[ "$FRAPPE_URL" == __* ]] && [ -f "$CONF" ]; then . "$CONF"; fi
 
 LOG_DIR="${XDG_STATE_HOME:-$HOME/.local/state}/teamlimit-optimizer"
 mkdir -p "$LOG_DIR"
 LOG="$LOG_DIR/report.log"
 TEST=0; [ "${1:-}" = "--test" ] && TEST=1
 log() { local line; line="$(date '+%Y-%m-%d %H:%M:%S')  $*"; echo "$line" >> "$LOG"; [ $TEST -eq 1 ] && echo "$line"; return 0; }
+
+[[ "$FRAPPE_URL" == __* ]] && { log "No configuration found ($CONF)."; exit 1; }
 
 CRED="$HOME/.claude/.credentials.json"
 CFG="$HOME/.claude.json"

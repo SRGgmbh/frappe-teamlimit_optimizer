@@ -1,8 +1,8 @@
 // Copyright (c) 2026, SRG - Systemhaus GmbH and contributors
-// For license information, please see license.txt
+// For license information, please see LICENSE
 
 // Hand-over block from Claude or other AI assistants:
-// === TEAMLIMIT-AUFGABE === … --- PROMPT --- … === ENDE ===  (German or English keys)
+// === TEAMLIMIT-TASK === … --- PROMPT --- … === END ===  (English or German keys and markers)
 const TL_EFFORT = {
 	S: "S – up to 25 % of a 5-h window",
 	M: "M – up to 50 % of a 5-h window",
@@ -60,7 +60,7 @@ function tl_import_dialog(on_values) {
 			{
 				fieldname: "text",
 				fieldtype: "Long Text",
-				label: __("Paste the block from “=== TEAMLIMIT-AUFGABE ===” to “=== ENDE ===”"),
+				label: __("Paste the block from “=== TEAMLIMIT-TASK ===” to “=== END ===”"),
 				reqd: 1,
 			},
 		],
@@ -92,10 +92,10 @@ function tl_act(frm, action, extra) {
 function tl_prompt(frm) {
 	const url = `${window.location.origin}/app/claude-task/${frm.doc.name}`;
 	return (
-		`[Teamlimit-Aufgabe ${frm.doc.name}: ${frm.doc.title}]\n` +
+		`[${__("Teamlimit task")} ${frm.doc.name}: ${frm.doc.title}]\n` +
 		`${__("Task in the pool")}: ${url}\n\n` +
 		`${frm.doc.prompt || ""}\n\n` +
-		__("When the task is done, use the skill “aufgabe-abschliessen”.")
+		__("When the task is done, use the skill “pool-task-complete”.")
 	);
 }
 
@@ -182,7 +182,7 @@ frappe.ui.form.on("Claude Task", {
 						},
 						{
 							fieldname: "summary",
-							label: __("Result summary (from the skill “aufgabe-abschliessen”)"),
+							label: __("Result summary (from the skill “pool-task-complete”)"),
 							fieldtype: "Small Text",
 						},
 					],

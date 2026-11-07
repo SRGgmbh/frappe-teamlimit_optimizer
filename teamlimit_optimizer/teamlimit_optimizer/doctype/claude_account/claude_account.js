@@ -1,5 +1,5 @@
 // Copyright (c) 2026, SRG - Systemhaus GmbH and contributors
-// For license information, please see license.txt
+// For license information, please see LICENSE
 
 function teamlimit_color_bars(root) {
 	frappe.db.get_value("Teamlimit Settings", "Teamlimit Settings", ["warn_pct", "crit_pct"]).then((r) => {

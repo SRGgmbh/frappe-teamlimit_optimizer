@@ -1,15 +1,15 @@
 ---
 name: aufgabe-abschliessen
-description: Schließt eine Aufgabe aus dem Teamlimit-Aufgabenpool sauber ab – prüft die Fertig-Kriterien, sorgt für ein geteiltes Ergebnis und erstellt die Ergebnis-Zusammenfassung für Frappe. Nutzen, wenn ein Chat mit „[Teamlimit-Aufgabe …]“ begonnen hat und der Nutzer die Aufgabe abschließen will oder sagt, sie sei fertig.
+description: Schließt eine Aufgabe aus dem Teamlimit-Aufgabenpool sauber ab – prüft die Fertig-Kriterien, sorgt für ein geteiltes Ergebnis und erstellt die Ergebnis-Zusammenfassung für Frappe. Nutzen, wenn ein Chat mit „[Teamlimit-Aufgabe …]“ oder „[Teamlimit task …]“ begonnen hat und der Nutzer die Aufgabe abschließen will oder sagt, sie sei fertig.
 ---
 
 # Aufgabe aus dem Aufgabenpool abschließen
 
-Der Chat hat mit einer Kopfzeile `[Teamlimit-Aufgabe <Nummer>: <Titel>]` und einem Link „Aufgabe im Pool“ begonnen. Der Auftraggeber wird über Frappe benachrichtigt, sobald die Aufgabe als erledigt markiert ist, und liest dann die Zusammenfassung.
+Der Chat hat mit einer Kopfzeile `[Teamlimit-Aufgabe <Nummer>: <Titel>]` (bei englischer Oberfläche `[Teamlimit task …]`) und einem Link „Aufgabe im Pool“ begonnen. Der Auftraggeber wird über Frappe benachrichtigt, sobald die Aufgabe als erledigt markiert ist, und liest dann die Zusammenfassung.
 
 ## Ablauf
 
-1. **Fertig-Kriterien prüfen.** Suche im ersten Prompt den Abschnitt „Fertig, wenn“. Gehe jedes Kriterium durch und sage ehrlich, ob es erfüllt ist. Ist etwas offen, frage den Nutzer, ob er es noch erledigen oder als offenen Punkt melden will.
+1. **Fertig-Kriterien prüfen.** Suche im ersten Prompt den Abschnitt „Fertig, wenn“ (oder „Done when“). Gehe jedes Kriterium durch und sage ehrlich, ob es erfüllt ist. Ist etwas offen, frage den Nutzer, ob er es noch erledigen oder als offenen Punkt melden will.
 2. **Ergebnis teilbar machen.** Der Auftraggeber kann diesen Chat nicht sehen. Kläre mit dem Nutzer, wie das Ergebnis zu ihm kommt:
    - Chat teilen (Teilen-Schaltfläche oben, Link kopieren)
    - Artefakt bzw. Doc teilen

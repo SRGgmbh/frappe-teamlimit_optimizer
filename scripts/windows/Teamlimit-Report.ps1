@@ -1,7 +1,10 @@
-# Teamlimit Optimizer – reporting script for Windows
+﻿# Teamlimit Optimizer – reporting script for Windows
 # Reads the Claude usage of the signed-in user and reports it to Frappe.
 # The Claude token never leaves the device; only e-mail, seat tier and percentages are sent.
 # Run manually with visible output:  powershell -ExecutionPolicy Bypass -File .\Teamlimit-Report.ps1 -Test
+#
+# Address and key are either filled in when the script is downloaded from the Teamlimit Settings,
+# or read from config.json next to the script (written by scripts/install-windows.ps1).
 param([switch]$Test)
 
 $FrappeUrl  = "__FRAPPE_URL__"
@@ -20,6 +23,14 @@ function LocalTime($iso) {
     if (-not $iso) { return $null }
     return ([datetimeoffset]::Parse($iso)).LocalDateTime.ToString("yyyy-MM-dd HH:mm:ss")
 }
+
+$cfgPath = Join-Path $PSScriptRoot "config.json"
+if ($FrappeUrl.StartsWith("__") -and (Test-Path $cfgPath)) {
+    $cfg = Get-Content $cfgPath -Raw | ConvertFrom-Json
+    $FrappeUrl = $cfg.url
+    $IngestAuth = $cfg.auth
+}
+if ($FrappeUrl.StartsWith("__")) { Log "No configuration found (config.json next to the script)."; exit 1 }
 
 try {
     $credFile = Join-Path $env:USERPROFILE ".claude\.credentials.json"
