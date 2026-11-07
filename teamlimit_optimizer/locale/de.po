@@ -1,0 +1,801 @@
+# German translations for Teamlimit Optimizer.
+# Copyright (C) 2026 SRG - Systemhaus GmbH
+msgid ""
+msgstr ""
+"Project-Id-Version: Teamlimit Optimizer 0.1.0\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "5 h %"
+msgstr "5 h %"
+
+msgid "5 h Reset"
+msgstr "5 h Reset"
+
+msgid "5-h Windows"
+msgstr "5-h-Fenster"
+
+msgid "= Standard Weekly Budgets"
+msgstr "= Standard-Wochenbudgets"
+
+msgid "A new key invalidates all scripts already distributed. Continue?"
+msgstr "Ein neuer Schlüssel macht alle bereits verteilten Skripte ungültig. Fortfahren?"
+
+msgid "Accounts Not Reporting"
+msgstr "Konten ohne Meldung"
+
+msgid "Accounts Reporting"
+msgstr "Konten mit Meldung"
+
+msgid "Administrators"
+msgstr "Administratoren"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "All accounts ({0})"
+msgstr "Alle Konten ({0})"
+
+msgid "Also Works on Weekends"
+msgstr "Arbeitet auch am Wochenende"
+
+msgid "Apr"
+msgstr "Apr"
+
+msgid "Audience"
+msgstr "Zielgruppe"
+
+msgid "Aug"
+msgstr "Aug"
+
+msgid "Avg Expired Budget (4 Weeks)"
+msgstr "Ø verfallenes Budget (4 Wochen)"
+
+msgid "Avg Usage"
+msgstr "Ø Auslastung"
+
+msgid "Avg Usage %"
+msgstr "Ø Auslastung %"
+
+msgid "Avg Usage 12 Months"
+msgstr "Ø Auslastung 12 Monate"
+
+msgid "Avg Usage Previous Month"
+msgstr "Ø Auslastung Vormonat"
+
+msgid "Avg Usage Same Month Last Year"
+msgstr "Ø Auslastung Vorjahresmonat"
+
+msgid "Avg Usage This Month"
+msgstr "Ø Auslastung dieser Monat"
+
+msgid "Avg Usage {0} %"
+msgstr "Ø Auslastung {0} %"
+
+msgid "Avg Weekly Usage"
+msgstr "Ø Wochenauslastung"
+
+msgid "Below Yellow"
+msgstr "unter Gelb"
+
+msgid "Biggest helper: {0} with {1} points."
+msgstr "Größter Helfer: {0} mit {1} Punkten."
+
+msgid "CW{0}"
+msgstr "KW{0}"
+
+msgid "Cause"
+msgstr "Ursache"
+
+msgid "Chat: starts in the selected Claude project, the prompt is pasted from the clipboard. Cowork and Claude Code: start without a project, the prompt is prefilled."
+msgstr "Chat: startet im gewählten Claude-Projekt, der Prompt wird über die Zwischenablage eingefügt. Cowork und Claude Code: starten ohne Projekt, der Prompt steht direkt im Eingabefeld."
+
+msgid "Claude"
+msgstr "Claude"
+
+msgid "Claude Account"
+msgstr "Claude-Konto"
+
+msgid "Claude Account E-Mail"
+msgstr "E-Mail des Claude-Kontos"
+
+msgid "Claude Accounts"
+msgstr "Claude-Konten"
+
+msgid "Claude Project"
+msgstr "Claude-Projekt"
+
+msgid "Claude Projects"
+msgstr "Claude-Projekte"
+
+msgid "Claude Task"
+msgstr "Claude-Aufgabe"
+
+msgid "Claude Team"
+msgstr "Claude Team"
+
+msgid "Claude Teams"
+msgstr "Claude Teams"
+
+msgid "Claude Usage Ingest"
+msgstr "Claude Usage Ingest"
+
+msgid "Claude Usage Manager"
+msgstr "Claude Usage Manager"
+
+msgid "Claude Usage Team"
+msgstr "Claude Usage Team"
+
+msgid "Claude Usage User"
+msgstr "Claude Usage User"
+
+msgid "Claude Usage Week"
+msgstr "Claude-Nutzungswoche"
+
+msgid "Colleague"
+msgstr "Kollege"
+
+msgid "Colour Thresholds"
+msgstr "Farbschwellen"
+
+msgid "Complete task"
+msgstr "Aufgabe abschließen"
+
+msgid "Completed At"
+msgstr "Erledigt am"
+
+msgid "Content"
+msgstr "Inhalt"
+
+msgid "Copied"
+msgstr "Kopiert"
+
+msgid "Copy"
+msgstr "Kopieren"
+
+msgid "Copy prompt"
+msgstr "Prompt kopieren"
+
+msgid "Counted in Week"
+msgstr "Gezählt in Woche"
+
+msgid "Create from AI text"
+msgstr "Aus KI-Text anlegen"
+
+msgid "Create the ingest user now?"
+msgstr "Ingest-Benutzer jetzt anlegen?"
+
+msgid "Created"
+msgstr "Eingestellt"
+
+msgid "Current 5-h Window (internal)"
+msgstr "Laufendes 5-h-Fenster (intern)"
+
+msgid "Current State"
+msgstr "Aktueller Stand"
+
+msgid "Currently: {0} open, {1} in progress, {2} with question, {3} done."
+msgstr "Aktuell: {0} offen, {1} in Arbeit, {2} mit Rückfrage, {3} erledigt."
+
+msgid "Dec"
+msgstr "Dez"
+
+msgid "Done"
+msgstr "Erledigt"
+
+msgid "Done %"
+msgstr "Erledigt %"
+
+msgid "Done With Claude Account"
+msgstr "Erledigt mit Claude-Konto"
+
+msgid "Download Linux script"
+msgstr "Linux-Skript herunterladen"
+
+msgid "Download Windows script"
+msgstr "Windows-Skript herunterladen"
+
+msgid "Download scheduled task (XML)"
+msgstr "Geplante Aufgabe (XML) herunterladen"
+
+msgid "Due Date"
+msgstr "Fällig bis"
+
+msgid "E-mail missing"
+msgstr "E-Mail fehlt"
+
+msgid "Edit"
+msgstr "Bearbeiten"
+
+msgid "Effort"
+msgstr "Aufwand"
+
+msgid "Employees"
+msgstr "Mitarbeiter"
+
+msgid "Everyone"
+msgstr "Alle"
+
+msgid "Exactly as in claude.ai, so that AI hand-over blocks can be matched."
+msgstr "Genau wie in claude.ai, damit KI-Übergabeblöcke das Projekt zuordnen können."
+
+msgid "Expired %"
+msgstr "Verfallen %"
+
+msgid "Expired Budget"
+msgstr "Verfallenes Budget"
+
+msgid "Extra Usage Used"
+msgstr "Zusatzguthaben verbraucht"
+
+msgid "Feb"
+msgstr "Feb"
+
+msgid "Fields imported – please check and save."
+msgstr "Felder übernommen – bitte prüfen und speichern."
+
+msgid "Frappe User"
+msgstr "Frappe-User"
+
+msgid "Free %"
+msgstr "Frei %"
+
+msgid "Free (Standard Units)"
+msgstr "Frei (Standard-Einheiten)"
+
+msgid "From this value 5-h and weekly usage is marked orange. For “Free %” it applies the other way round."
+msgstr "Ab diesem Wert werden 5-h- und Wochenauslastung orange markiert. Bei „Frei %“ gilt der Wert umgekehrt."
+
+msgid "From this value usage is marked red, the limit is almost reached."
+msgstr "Ab diesem Wert werden Auslastungen rot markiert, das Limit ist fast erreicht."
+
+msgid "Guide"
+msgstr "Anleitung"
+
+msgid "Guides"
+msgstr "Anleitungen"
+
+msgid "Guides and Administration"
+msgstr "Anleitungen und Verwaltung"
+
+msgid "Helpers of the Week"
+msgstr "Helfer der Woche"
+
+msgid "High"
+msgstr "Hoch"
+
+msgid "If set, the target usage is spread over all 7 days until the reset, otherwise over Monday to Friday."
+msgstr "Ist das gesetzt, verteilt sich der Soll-Verbrauch auf alle 7 Tage bis zum Reset. Sonst nur auf Montag bis Freitag."
+
+msgid "If the last report is older, an account counts as outdated and is not suggested. Should be larger than the reporting interval of the scripts."
+msgstr "Liegt die letzte Meldung länger zurück, gilt ein Konto als veraltet und wird in „Wen frage ich?“ nicht vorgeschlagen. Sollte größer sein als das Melde-Intervall der Skripte."
+
+msgid "Import"
+msgstr "Übernehmen"
+
+msgid "Import from AI text"
+msgstr "Aus KI-Text übernehmen"
+
+msgid "In Progress"
+msgstr "In Arbeit"
+
+msgid "Ingest API Key"
+msgstr "Ingest-API-Key"
+
+msgid "Ingest API Secret"
+msgstr "Ingest-API-Secret"
+
+msgid "Ingest User"
+msgstr "Ingest-Benutzer"
+
+msgid "Ingest user is ready."
+msgstr "Ingest-Benutzer ist eingerichtet."
+
+msgid "Jan"
+msgstr "Jan"
+
+msgid "Jul"
+msgstr "Jul"
+
+msgid "Jun"
+msgstr "Jun"
+
+msgid "Key Figures"
+msgstr "Kennzahlen"
+
+msgid "L – a full 5-h window"
+msgstr "L – ein volles 5-h-Fenster"
+
+msgid "Language"
+msgstr "Sprache"
+
+msgid "Last 12 Months"
+msgstr "letzte 12 Monate"
+
+msgid "Last 4 Weeks"
+msgstr "Letzte 4 Wochen"
+
+msgid "Last Reported"
+msgstr "Zuletzt gemeldet"
+
+msgid "Leave empty if anyone may take the task."
+msgstr "Leer lassen, wenn jeder die Aufgabe übernehmen darf."
+
+msgid "Left Until Reset"
+msgstr "Rest bis Reset"
+
+msgid "Level"
+msgstr "Stufe"
+
+msgid "Low"
+msgstr "Niedrig"
+
+msgid "M – up to 50 % of a 5-h window"
+msgstr "M – bis 50 % eines 5-h-Fensters"
+
+msgid "Mar"
+msgstr "Mär"
+
+msgid "May"
+msgstr "Mai"
+
+msgid "Medium"
+msgstr "Mittel"
+
+msgid "Minimum Free for Suggestion %"
+msgstr "Mindestens frei für Vorschlag %"
+
+msgid "Month"
+msgstr "Monat"
+
+msgid "No current information"
+msgstr "Keine aktuellen Informationen"
+
+msgid "No hand-over block found. It must contain “--- PROMPT ---”."
+msgstr "Kein Übergabe-Block erkannt. Er muss „--- PROMPT ---“ enthalten."
+
+msgid "No task has been completed in the selected period yet."
+msgstr "Im gewählten Zeitraum wurde noch keine Aufgabe erledigt."
+
+msgid "No tasks in the pool"
+msgstr "Keine Aufgaben im Pool"
+
+msgid "Not permitted"
+msgstr "Nicht erlaubt"
+
+msgid "Nov"
+msgstr "Nov"
+
+msgid "Number of Claude Users in the Team Plan"
+msgstr "Anzahl Claude-Benutzer im Team-Plan"
+
+msgid "Oct"
+msgstr "Okt"
+
+msgid "Only for Claude Team"
+msgstr "Nur für Claude Team"
+
+msgid "Only take"
+msgstr "Nur übernehmen"
+
+msgid "Open"
+msgstr "Offen"
+
+msgid "Open Tasks"
+msgstr "Offene Aufgaben"
+
+msgid "Open Tasks at the Resets"
+msgstr "Offene Aufgaben zu den Resets"
+
+msgid "Open at Week End"
+msgstr "Offen zum Wochenende"
+
+msgid "Open project"
+msgstr "Projekt öffnen"
+
+msgid "Open result"
+msgstr "Ergebnis öffnen"
+
+msgid "Open the project in claude.ai and copy the address from the address bar (https://claude.ai/project/…)."
+msgstr "Projekt in claude.ai öffnen und die Adresse aus der Adresszeile kopieren (https://claude.ai/project/…)."
+
+msgid "Opening the project"
+msgstr "Projekt wird geöffnet"
+
+msgid "Optional. Used by “Who can help?” to put the viewer's own Claude Team first."
+msgstr "Optional. Damit stellt „Wen frage ich?“ das eigene Claude Team des Betrachters voran."
+
+msgid "Order"
+msgstr "Reihenfolge"
+
+msgid "Other team"
+msgstr "Anderes Team"
+
+msgid "Own team"
+msgstr "Eigenes Team"
+
+msgid "Pace"
+msgstr "Tempo"
+
+msgid "Paste the block from “=== TEAMLIMIT-AUFGABE ===” to “=== ENDE ===”"
+msgstr "Block von „=== TEAMLIMIT-AUFGABE ===“ bis „=== ENDE ===“ einfügen"
+
+msgid "Period"
+msgstr "Zeitraum"
+
+msgid "Please enter a result link."
+msgstr "Bitte einen Ergebnis-Link angeben."
+
+msgid "Please set up the ingest user first."
+msgstr "Bitte zuerst den Ingest-Benutzer einrichten."
+
+msgid "Points (S 1 / M 2 / L 4)"
+msgstr "Punkte (S 1 / M 2 / L 4)"
+
+msgid "Premium"
+msgstr "Premium"
+
+msgid "Premium, other team"
+msgstr "Premium, anderes Team"
+
+msgid "Premium, own team"
+msgstr "Premium, eigenes Team"
+
+msgid "Prerequisites"
+msgstr "Voraussetzungen"
+
+msgid "Previous Year"
+msgstr "Vorjahr"
+
+msgid "Previous Year %"
+msgstr "Vorjahr %"
+
+msgid "Priority"
+msgstr "Priorität"
+
+msgid "Processing"
+msgstr "Bearbeitung"
+
+msgid "Project Link"
+msgstr "Projekt-Link"
+
+msgid "Project Name"
+msgstr "Projektname"
+
+msgid "Purpose"
+msgstr "Wofür"
+
+msgid "Question"
+msgstr "Rückfrage"
+
+msgid "Question about your task: {0}"
+msgstr "Rückfrage zu Ihrer Aufgabe: {0}"
+
+msgid "Question to the requester"
+msgstr "Rückfrage an Auftraggeber"
+
+msgid "Quick Access"
+msgstr "Schnellzugriff"
+
+msgid "Rank"
+msgstr "Rang"
+
+msgid "Rate Limit Tier (raw)"
+msgstr "Rate-Limit-Stufe (roh)"
+
+msgid "Red Reached"
+msgstr "Rot erreicht"
+
+msgid "Red from %"
+msgstr "Rot ab %"
+
+msgid "Release"
+msgstr "Freigeben"
+
+msgid "Renew ingest key"
+msgstr "Ingest-Schlüssel erneuern"
+
+msgid "Report Outdated After Hours"
+msgstr "Meldung veraltet nach Stunden"
+
+msgid "Reporting Scripts"
+msgstr "Melde-Skripte"
+
+msgid "Reporting Scripts Help"
+msgstr "Hilfe Melde-Skripte"
+
+msgid "Reporting scripts"
+msgstr "Melde-Skripte"
+
+msgid "Reports"
+msgstr "Auswertungen"
+
+msgid "Requested By"
+msgstr "Auftraggeber"
+
+msgid "Required connectors, files or access."
+msgstr "Benötigte Connectoren, Dateien oder Zugriffe."
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid "Result Link"
+msgstr "Ergebnis-Link"
+
+msgid "Result Summary"
+msgstr "Ergebnis-Zusammenfassung"
+
+msgid "Result link (shared chat, artifact or file)"
+msgstr "Ergebnis-Link (geteilter Chat, Artefakt oder Datei)"
+
+msgid "Result summary (from the skill “aufgabe-abschliessen”)"
+msgstr "Ergebnis-Zusammenfassung (vom Skill „aufgabe-abschliessen“)"
+
+msgid "Right now nobody has at least {0} % free."
+msgstr "Gerade hat niemand mindestens {0} % frei."
+
+msgid "S – up to 25 % of a 5-h window"
+msgstr "S – bis 25 % eines 5-h-Fensters"
+
+msgid "Seat"
+msgstr "Sitz"
+
+msgid "Seat Type"
+msgstr "Sitztyp"
+
+msgid "Sep"
+msgstr "Sep"
+
+msgid "Session Limits per Week"
+msgstr "Session-Limits je Woche"
+
+msgid "Set up ingest user"
+msgstr "Ingest-Benutzer einrichten"
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Standard"
+msgstr "Standard"
+
+msgid "Start In"
+msgstr "Starten in"
+
+msgid "Start in Claude"
+msgstr "In Claude starten"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Subscription Type (raw)"
+msgstr "Abo-Typ (roh)"
+
+msgid "Taken At"
+msgstr "Übernommen am"
+
+msgid "Taken By"
+msgstr "Übernommen von"
+
+msgid "Task"
+msgstr "Aufgabe"
+
+msgid "Task Pool"
+msgstr "Aufgabenpool"
+
+msgid "Task Pool Analysis"
+msgstr "Aufgabenpool-Auswertung"
+
+msgid "Task Pool Helpers"
+msgstr "Helfer der Woche"
+
+msgid "Task done: {0}"
+msgstr "Aufgabe erledigt: {0}"
+
+msgid "Task in the pool"
+msgstr "Aufgabe im Pool"
+
+msgid "Task not found"
+msgstr "Aufgabe nicht gefunden"
+
+msgid "Task taken: {0}"
+msgstr "Aufgabe übernommen: {0}"
+
+msgid "Tasks"
+msgstr "Aufgaben"
+
+msgid "Tasks Done"
+msgstr "Aufgaben erledigt"
+
+msgid "Tasks Done %"
+msgstr "Aufgaben erledigt %"
+
+msgid "Tasks Done This Week"
+msgstr "Erledigte Aufgaben diese Woche"
+
+msgid "Tasks Open at Week End"
+msgstr "Aufgaben offen zum Wochenende"
+
+msgid "Tasks open"
+msgstr "Aufgaben offen"
+
+msgid "Team Name"
+msgstr "Teamname"
+
+msgid "Teamlimit Guide"
+msgstr "Teamlimit-Anleitung"
+
+msgid "Teamlimit Optimizer"
+msgstr "Teamlimit Optimierer"
+
+msgid "Teamlimit Overview"
+msgstr "Teamlimit Übersicht"
+
+msgid "Teamlimit Settings"
+msgstr "Teamlimit-Einstellungen"
+
+msgid "Teamlimit Trend"
+msgstr "Teamlimit-Trend"
+
+msgid "Teamlimit Year Comparison"
+msgstr "Jahresvergleich"
+
+msgid "The project “{0}” is not in the project list yet. Please add it under Administration > Claude Projects and select it."
+msgstr "Das Projekt „{0}“ steht noch nicht in der Projektliste. Bitte unter Verwaltung > Claude-Projekte anlegen und dann auswählen."
+
+msgid "The prompt is in the clipboard. Paste it in the Claude project with Ctrl+V and send it."
+msgstr "Der Prompt liegt in der Zwischenablage. In Claude im Projekt mit Strg+V einfügen und absenden."
+
+msgid "The reporting scripts send the usage of each Claude account to this site. They sign in as a separate ingest user that may only report and cannot read anything. Set it up once, then download the scripts – the address of this site and the key are already filled in. Keep the scripts internal."
+msgstr "Die Melde-Skripte senden die Auslastung jedes Claude-Kontos an diese Instanz. Sie melden sich als eigener Ingest-Benutzer an, der nur melden und nichts lesen darf. Einmal einrichten, dann die Skripte herunterladen – Adresse dieser Instanz und Schlüssel sind bereits eingetragen. Die Skripte nur intern weitergeben."
+
+msgid "Thereof 100 %"
+msgstr "davon 100 %"
+
+msgid "Thereof ≥ 75 %"
+msgstr "davon ≥ 75 %"
+
+msgid "This Week"
+msgstr "Diese Woche"
+
+msgid "This Year"
+msgstr "Dieses Jahr"
+
+msgid "This task has already been taken by {0}."
+msgstr "Diese Aufgabe wurde bereits von {0} übernommen."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Total number of seats. The dashboard uses it to show how many accounts do not report, e.g. because Claude Code is not signed in yet."
+msgstr "Gesamtzahl der Sitze im Claude-Team-Plan. Daraus berechnet das Dashboard, wie viele Konten keine Daten melden, z. B. weil Claude Code noch nicht angemeldet ist."
+
+msgid "Trend"
+msgstr "Trend"
+
+msgid "Unknown"
+msgstr "Unbekannt"
+
+msgid "Unknown action"
+msgstr "Unbekannte Aktion"
+
+msgid "Unknown script"
+msgstr "Unbekanntes Skript"
+
+msgid "View"
+msgstr "Ansicht"
+
+msgid "Week"
+msgstr "Woche"
+
+msgid "Week %"
+msgstr "Woche %"
+
+msgid "Week Target %"
+msgstr "Woche Soll %"
+
+msgid "Weekly Peak %"
+msgstr "Wochenspitze %"
+
+msgid "Weekly Reset"
+msgstr "Wochen-Reset"
+
+msgid "Weeks"
+msgstr "Wochen"
+
+msgid "Weeks of the last 8 weeks with expired budget. “Tasks open”: tasks were waiting in the pool at at least one reset of the week, listed per account. “No tasks in the pool”: no task was waiting at any reset of the week, one total row for all accounts; “Expired %” is the average there. “= Standard weekly budgets” converts into full budgets of a standard seat: 100 % of a standard seat = 1, 100 % of a premium seat = 5."
+msgstr "Wochen der letzten 8 Wochen mit verfallenem Budget. „Aufgaben offen“: zu mindestens einem Reset der Woche lagen Aufgaben im Pool, je Konto aufgeführt. „Keine Aufgaben im Pool“: zu keinem Reset der Woche lag eine Aufgabe im Pool, eine Summenzeile über alle Konten; „Verfallen %“ ist dort der Durchschnitt. „= Standard-Wochenbudgets“ rechnet in volle Budgets eines Standard-Sitzes um: 100 % eines Standard-Sitzes = 1, 100 % eines Premium-Sitzes = 5."
+
+msgid "What is unclear?"
+msgstr "Was ist unklar?"
+
+msgid "When the task is done, use the skill “aufgabe-abschliessen”."
+msgstr "Wenn die Aufgabe erledigt ist, nutze den Skill „aufgabe-abschliessen“."
+
+msgid "Who Can Help"
+msgstr "Wen frage ich?"
+
+msgid "Who Can Help?"
+msgstr "Wen frage ich?"
+
+msgid "Window Bucket"
+msgstr "Fenster-Bucket"
+
+msgid "Window Reset"
+msgstr "Fenster-Reset"
+
+msgid "Windows This Week"
+msgstr "Fenster diese Woche"
+
+msgid "Windows at Limit This Week"
+msgstr "Fenster am Limit diese Woche"
+
+msgid "Write it so that it works without any follow-up questions."
+msgstr "So formulieren, dass er ohne Rückfrage funktioniert."
+
+msgid "Year Comparison"
+msgstr "Jahresvergleich"
+
+msgid "Year Comparison Usage"
+msgstr "Jahresvergleich Auslastung"
+
+msgid "Yellow Reached"
+msgstr "Gelb erreicht"
+
+msgid "Yellow from %"
+msgstr "Gelb ab %"
+
+msgid "Your Claude account (e-mail)"
+msgstr "Dein Claude-Konto (E-Mail)"
+
+msgid "Your Frappe user is not linked to a Claude account with a Claude Team. Please ask the administrator to add the link."
+msgstr "Ihrem Frappe-User ist kein Claude-Konto mit Claude Team zugeordnet. Bitte den Administrator bitten, die Zuordnung einzutragen."
+
+msgid "Your task “{0}” has been completed by {1}."
+msgstr "Ihre Aufgabe „{0}“ wurde von {1} erledigt."
+
+msgid "Your weekly budget: {0} % free, reset in {1} h."
+msgstr "Dein Wochenbudget: noch {0} % frei, Reset in {1} h."
+
+msgid "ahead"
+msgstr "vor Plan"
+
+msgid "behind"
+msgstr "hinter Plan"
+
+msgid "current"
+msgstr "aktuell"
+
+msgid "on track"
+msgstr "im Plan"
+
+msgid "outdated"
+msgstr "veraltet"
+
+msgid "someone else"
+msgstr "jemand anderem"
+
+msgid "unknown"
+msgstr "unbekannt"
+
+msgid "{0} % in {1} h"
+msgstr "{0} % in {1} h"
+
+msgid "{0} account(s) have never reported."
+msgstr "{0} Konto/Konten haben noch nie gemeldet."
+
+msgid "{0} has a question about “{1}”:"
+msgstr "{0} hat eine Rückfrage zu „{1}“:"
+
+msgid "{0} has taken your task “{1}” from the task pool."
+msgstr "{0} hat Ihre Aufgabe „{1}“ aus dem Aufgabenpool übernommen."
+
+msgid "{0} is already working on this task."
+msgstr "Diese Aufgabe bearbeitet bereits {0}."
+
+msgid "{0} open tasks are waiting in the task pool."
+msgstr "Im Aufgabenpool warten {0} offene Aufgaben."
+
+msgid "“Who can help?” only suggests colleagues with at least this much of their 5-h window and week free. Premium seats appear only if no standard seat reaches this value."
+msgstr "„Wen frage ich?“ schlägt nur Kollegen vor, die mindestens so viel ihres 5-h-Fensters und ihrer Woche frei haben. Premium-Sitze erscheinen erst, wenn kein Standard-Sitz diesen Wert erreicht."

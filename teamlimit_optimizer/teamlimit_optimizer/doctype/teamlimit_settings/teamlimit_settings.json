@@ -1,0 +1,133 @@
+{
+ "creation": "2026-11-07 12:00:00.000000",
+ "custom": 0,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sb_col",
+  "warn_pct",
+  "crit_pct",
+  "sb_ask",
+  "min_free_pct",
+  "stale_hours",
+  "sb_kpi",
+  "expected_accounts",
+  "sb_ingest",
+  "ingest_help",
+  "ingest_user",
+  "ingest_api_key",
+  "ingest_api_secret"
+ ],
+ "fields": [
+  {
+   "fieldname": "sb_col",
+   "fieldtype": "Section Break",
+   "label": "Colour Thresholds"
+  },
+  {
+   "default": "60",
+   "description": "From this value 5-h and weekly usage is marked orange. For “Free %” it applies the other way round.",
+   "fieldname": "warn_pct",
+   "fieldtype": "Percent",
+   "label": "Yellow from %"
+  },
+  {
+   "default": "90",
+   "description": "From this value usage is marked red, the limit is almost reached.",
+   "fieldname": "crit_pct",
+   "fieldtype": "Percent",
+   "label": "Red from %"
+  },
+  {
+   "fieldname": "sb_ask",
+   "fieldtype": "Section Break",
+   "label": "Who Can Help?"
+  },
+  {
+   "default": "25",
+   "description": "“Who can help?” only suggests colleagues with at least this much of their 5-h window and week free. Premium seats appear only if no standard seat reaches this value.",
+   "fieldname": "min_free_pct",
+   "fieldtype": "Percent",
+   "label": "Minimum Free for Suggestion %"
+  },
+  {
+   "default": "3",
+   "description": "If the last report is older, an account counts as outdated and is not suggested. Should be larger than the reporting interval of the scripts.",
+   "fieldname": "stale_hours",
+   "fieldtype": "Int",
+   "label": "Report Outdated After Hours"
+  },
+  {
+   "fieldname": "sb_kpi",
+   "fieldtype": "Section Break",
+   "label": "Key Figures"
+  },
+  {
+   "description": "Total number of seats. The dashboard uses it to show how many accounts do not report, e.g. because Claude Code is not signed in yet.",
+   "fieldname": "expected_accounts",
+   "fieldtype": "Int",
+   "label": "Number of Claude Users in the Team Plan"
+  },
+  {
+   "fieldname": "sb_ingest",
+   "fieldtype": "Section Break",
+   "label": "Reporting Scripts"
+  },
+  {
+   "fieldname": "ingest_help",
+   "fieldtype": "HTML",
+   "label": "Reporting Scripts Help"
+  },
+  {
+   "fieldname": "ingest_user",
+   "fieldtype": "Link",
+   "label": "Ingest User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ingest_api_key",
+   "fieldtype": "Data",
+   "label": "Ingest API Key",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ingest_api_secret",
+   "fieldtype": "Password",
+   "label": "Ingest API Secret",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 1,
+ "modified": "2026-11-07 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Teamlimit Optimizer",
+ "name": "Teamlimit Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Claude Usage Manager"
+  },
+  {
+   "read": 1,
+   "role": "Claude Usage User"
+  },
+  {
+   "read": 1,
+   "role": "Claude Usage Team"
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

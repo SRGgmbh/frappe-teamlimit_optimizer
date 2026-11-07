@@ -1,0 +1,197 @@
+{
+ "autoname": "field:email",
+ "creation": "2026-11-07 12:00:00.000000",
+ "custom": 0,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "email",
+  "claude_team",
+  "frappe_user",
+  "seat_type",
+  "weekend_work",
+  "rate_limit_tier",
+  "subscription_type",
+  "sb_now",
+  "five_pct",
+  "five_reset",
+  "cb1",
+  "week_pct",
+  "week_reset",
+  "cb2",
+  "last_seen",
+  "sb_win",
+  "cur_window_reset",
+  "cur_window_bucket",
+  "cur_window_week",
+  "sb_weeks",
+  "weeks"
+ ],
+ "fields": [
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Claude Account E-Mail",
+   "options": "Email",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "claude_team",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Claude Team",
+   "options": "Claude Team"
+  },
+  {
+   "description": "Optional. Used by “Who can help?” to put the viewer's own Claude Team first.",
+   "fieldname": "frappe_user",
+   "fieldtype": "Link",
+   "label": "Frappe User",
+   "options": "User"
+  },
+  {
+   "default": "Unknown",
+   "fieldname": "seat_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Seat Type",
+   "options": "Unknown\nStandard\nPremium"
+  },
+  {
+   "default": "0",
+   "description": "If set, the target usage is spread over all 7 days until the reset, otherwise over Monday to Friday.",
+   "fieldname": "weekend_work",
+   "fieldtype": "Check",
+   "label": "Also Works on Weekends"
+  },
+  {
+   "fieldname": "rate_limit_tier",
+   "fieldtype": "Data",
+   "label": "Rate Limit Tier (raw)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "subscription_type",
+   "fieldtype": "Data",
+   "label": "Subscription Type (raw)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_now",
+   "fieldtype": "Section Break",
+   "label": "Current State"
+  },
+  {
+   "fieldname": "five_pct",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "5 h %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "five_reset",
+   "fieldtype": "Datetime",
+   "label": "5 h Reset",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "week_pct",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Week %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "week_reset",
+   "fieldtype": "Datetime",
+   "label": "Weekly Reset",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_seen",
+   "fieldtype": "Datetime",
+   "label": "Last Reported",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_win",
+   "fieldtype": "Section Break",
+   "label": "Current 5-h Window (internal)"
+  },
+  {
+   "fieldname": "cur_window_reset",
+   "fieldtype": "Datetime",
+   "label": "Window Reset",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cur_window_bucket",
+   "fieldtype": "Int",
+   "label": "Window Bucket",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cur_window_week",
+   "fieldtype": "Datetime",
+   "label": "Counted in Week",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_weeks",
+   "fieldtype": "Section Break",
+   "label": "Weeks"
+  },
+  {
+   "fieldname": "weeks",
+   "fieldtype": "Table",
+   "label": "Weeks",
+   "options": "Claude Usage Week",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "modified": "2026-11-07 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Teamlimit Optimizer",
+ "name": "Claude Account",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Claude Usage Manager"
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "email",
+ "track_changes": 0
+}

@@ -1,0 +1,79 @@
+{
+ "creation": "2026-11-07 12:00:00.000000",
+ "custom": 0,
+ "doctype": "DocType",
+ "editable_grid": 0,
+ "engine": "InnoDB",
+ "field_order": [
+  "week_reset",
+  "week_peak",
+  "windows",
+  "b50",
+  "b75",
+  "b90",
+  "b100",
+  "extra_used"
+ ],
+ "fields": [
+  {
+   "fieldname": "week_reset",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Weekly Reset"
+  },
+  {
+   "fieldname": "week_peak",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Weekly Peak %"
+  },
+  {
+   "fieldname": "windows",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "5-h Windows"
+  },
+  {
+   "fieldname": "b50",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "50–74 %"
+  },
+  {
+   "fieldname": "b75",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "75–89 %"
+  },
+  {
+   "fieldname": "b90",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "90–99 %"
+  },
+  {
+   "fieldname": "b100",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "100 %"
+  },
+  {
+   "fieldname": "extra_used",
+   "fieldtype": "Float",
+   "label": "Extra Usage Used"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 1,
+ "modified": "2026-11-07 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Teamlimit Optimizer",
+ "name": "Claude Usage Week",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

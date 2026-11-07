@@ -1,0 +1,250 @@
+{
+ "autoname": "hash",
+ "creation": "2026-11-07 12:00:00.000000",
+ "custom": 0,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "status",
+  "priority",
+  "effort",
+  "cb1",
+  "due_date",
+  "requested_by",
+  "claude_team",
+  "sb_claude",
+  "mode",
+  "claude_project",
+  "project_url",
+  "prompt",
+  "prerequisites",
+  "sb_run",
+  "claimed_by",
+  "claimed_at",
+  "claude_email",
+  "cb2",
+  "result_url",
+  "completed_at",
+  "result_summary",
+  "notes_question"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task",
+   "reqd": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nIn Progress\nQuestion\nDone",
+   "read_only": 1
+  },
+  {
+   "default": "Medium",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Priority",
+   "options": "High\nMedium\nLow"
+  },
+  {
+   "fieldname": "effort",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Effort",
+   "options": "S – up to 25 % of a 5-h window\nM – up to 50 % of a 5-h window\nL – a full 5-h window"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date"
+  },
+  {
+   "default": "__user",
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested By",
+   "options": "User"
+  },
+  {
+   "description": "Leave empty if anyone may take the task.",
+   "fieldname": "claude_team",
+   "fieldtype": "Link",
+   "label": "Only for Claude Team",
+   "options": "Claude Team"
+  },
+  {
+   "fieldname": "sb_claude",
+   "fieldtype": "Section Break",
+   "label": "Claude"
+  },
+  {
+   "default": "Chat",
+   "description": "Chat: starts in the selected Claude project, the prompt is pasted from the clipboard. Cowork and Claude Code: start without a project, the prompt is prefilled.",
+   "fieldname": "mode",
+   "fieldtype": "Select",
+   "label": "Start In",
+   "options": "Chat\nCowork\nClaude Code"
+  },
+  {
+   "depends_on": "eval:doc.mode=='Chat'",
+   "fieldname": "claude_project",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Claude Project",
+   "options": "Claude Project"
+  },
+  {
+   "depends_on": "eval:doc.mode=='Chat'",
+   "fetch_from": "claude_project.url",
+   "fieldname": "project_url",
+   "fieldtype": "Data",
+   "label": "Project Link",
+   "options": "URL",
+   "read_only": 1
+  },
+  {
+   "description": "Write it so that it works without any follow-up questions.",
+   "fieldname": "prompt",
+   "fieldtype": "Long Text",
+   "label": "Prompt",
+   "reqd": 1
+  },
+  {
+   "description": "Required connectors, files or access.",
+   "fieldname": "prerequisites",
+   "fieldtype": "Small Text",
+   "label": "Prerequisites"
+  },
+  {
+   "fieldname": "sb_run",
+   "fieldtype": "Section Break",
+   "label": "Processing"
+  },
+  {
+   "fieldname": "claimed_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Taken By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "claimed_at",
+   "fieldtype": "Datetime",
+   "label": "Taken At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "claude_email",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Done With Claude Account",
+   "options": "Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "result_url",
+   "fieldtype": "Data",
+   "label": "Result Link",
+   "options": "URL",
+   "read_only": 1
+  },
+  {
+   "fieldname": "completed_at",
+   "fieldtype": "Datetime",
+   "label": "Completed At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "result_summary",
+   "fieldtype": "Small Text",
+   "label": "Result Summary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes_question",
+   "fieldtype": "Small Text",
+   "label": "Question",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "modified": "2026-11-07 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Teamlimit Optimizer",
+ "name": "Claude Task",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Desk User"
+  },
+  {
+   "if_owner": 1,
+   "read": 1,
+   "role": "Desk User",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Claude Usage Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Claude Usage User",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Claude Usage Team",
+   "write": 1
+  }
+ ],
+ "quick_entry": 0,
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "due_date",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1
+}

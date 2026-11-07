@@ -1,0 +1,68 @@
+[
+ {
+  "channel": "System Notification",
+  "condition": "doc.status == \"In Progress\" and doc.claimed_by",
+  "doctype": "Notification",
+  "document_type": "Claude Task",
+  "enabled": 1,
+  "event": "Value Change",
+  "is_standard": 0,
+  "message": "<p>{{ _(\"{0} has taken your task “{1}” from the task pool.\").format(frappe.db.get_value(\"User\", doc.claimed_by, \"full_name\") or doc.claimed_by, doc.title) }}</p>",
+  "message_type": "HTML",
+  "module": "Teamlimit Optimizer",
+  "name": "Teamlimit: Task Taken",
+  "recipients": [
+   {
+    "doctype": "Notification Recipient",
+    "receiver_by_document_field": "requested_by"
+   }
+  ],
+  "send_system_notification": 0,
+  "subject": "{{ _(\"Task taken: {0}\").format(doc.title) }}",
+  "value_changed": "status"
+ },
+ {
+  "channel": "System Notification",
+  "condition": "doc.status == \"Done\"",
+  "doctype": "Notification",
+  "document_type": "Claude Task",
+  "enabled": 1,
+  "event": "Value Change",
+  "is_standard": 0,
+  "message": "<p>{{ _(\"Your task “{0}” has been completed by {1}.\").format(doc.title, frappe.db.get_value(\"User\", doc.claimed_by, \"full_name\") or doc.claimed_by) }}</p>{% if doc.result_summary %}<p>{{ doc.result_summary }}</p>{% endif %}<p><a href=\"{{ doc.result_url }}\">{{ _(\"Open result\") }}</a></p>",
+  "message_type": "HTML",
+  "module": "Teamlimit Optimizer",
+  "name": "Teamlimit: Task Done",
+  "recipients": [
+   {
+    "doctype": "Notification Recipient",
+    "receiver_by_document_field": "requested_by"
+   }
+  ],
+  "send_system_notification": 0,
+  "subject": "{{ _(\"Task done: {0}\").format(doc.title) }}",
+  "value_changed": "status"
+ },
+ {
+  "channel": "System Notification",
+  "condition": "doc.status == \"Question\"",
+  "doctype": "Notification",
+  "document_type": "Claude Task",
+  "enabled": 1,
+  "event": "Value Change",
+  "is_standard": 0,
+  "message": "<p>{{ _(\"{0} has a question about “{1}”:\").format(frappe.db.get_value(\"User\", doc.claimed_by, \"full_name\") or doc.claimed_by, doc.title) }}</p><p>{{ doc.notes_question }}</p>",
+  "message_type": "HTML",
+  "module": "Teamlimit Optimizer",
+  "name": "Teamlimit: Question about Task",
+  "recipients": [
+   {
+    "doctype": "Notification Recipient",
+    "receiver_by_document_field": "requested_by"
+   }
+  ],
+  "send_system_notification": 0,
+  "subject": "{{ _(\"Question about your task: {0}\").format(doc.title) }}",
+  "value_changed": "status"
+ }
+]

@@ -1,0 +1,124 @@
+[
+ {
+  "chart_name": "Avg Weekly Usage",
+  "chart_type": "Report",
+  "doctype": "Dashboard Chart",
+  "filters_json": "{\"granularity\": \"Week\"}",
+  "is_public": 1,
+  "is_standard": 0,
+  "module": "Teamlimit Optimizer",
+  "name": "Avg Weekly Usage",
+  "report_name": "Teamlimit Trend",
+  "time_interval": "Weekly",
+  "timeseries": 0,
+  "timespan": "Last Year",
+  "type": "Line",
+  "use_report_chart": 0,
+  "x_field": "period",
+  "y_axis": [
+   {
+    "color": "#D97757",
+    "doctype": "Dashboard Chart Field",
+    "y_field": "avg_peak"
+   },
+   {
+    "color": "#5E64FF",
+    "doctype": "Dashboard Chart Field",
+    "y_field": "task_quote"
+   }
+  ]
+ },
+ {
+  "chart_name": "Session Limits per Week",
+  "chart_type": "Report",
+  "custom_options": "{\"barOptions\": {\"stacked\": 1}}",
+  "doctype": "Dashboard Chart",
+  "filters_json": "{\"granularity\": \"Week\", \"metric\": \"sessions\"}",
+  "is_public": 1,
+  "is_standard": 0,
+  "module": "Teamlimit Optimizer",
+  "name": "Session Limits per Week",
+  "report_name": "Teamlimit Trend",
+  "time_interval": "Weekly",
+  "timeseries": 0,
+  "timespan": "Last Year",
+  "type": "Bar",
+  "use_report_chart": 0,
+  "x_field": "period",
+  "y_axis": [
+   {
+    "color": "#2E8540",
+    "doctype": "Dashboard Chart Field",
+    "y_field": "ok"
+   },
+   {
+    "color": "#F5A623",
+    "doctype": "Dashboard Chart Field",
+    "y_field": "warn"
+   },
+   {
+    "color": "#E24C4C",
+    "doctype": "Dashboard Chart Field",
+    "y_field": "crit"
+   }
+  ]
+ },
+ {
+  "chart_name": "Avg Usage 12 Months",
+  "chart_type": "Report",
+  "doctype": "Dashboard Chart",
+  "filters_json": "{\"granularity\": \"Month\"}",
+  "is_public": 1,
+  "is_standard": 0,
+  "module": "Teamlimit Optimizer",
+  "name": "Avg Usage 12 Months",
+  "report_name": "Teamlimit Trend",
+  "time_interval": "Weekly",
+  "timeseries": 0,
+  "timespan": "Last Year",
+  "type": "Line",
+  "use_report_chart": 0,
+  "x_field": "period",
+  "y_axis": [
+   {
+    "color": "#D97757",
+    "doctype": "Dashboard Chart Field",
+    "y_field": "avg_peak"
+   },
+   {
+    "color": "#8D99A6",
+    "doctype": "Dashboard Chart Field",
+    "y_field": "prev_peak"
+   }
+  ]
+ },
+ {
+  "chart_name": "Year Comparison Usage",
+  "chart_type": "Report",
+  "doctype": "Dashboard Chart",
+  "filters_json": "{}",
+  "is_public": 1,
+  "is_standard": 0,
+  "module": "Teamlimit Optimizer",
+  "name": "Year Comparison Usage",
+  "report_name": "Teamlimit Year Comparison",
+  "time_interval": "Weekly",
+  "timeseries": 0,
+  "timespan": "Last Year",
+  "type": "Line",
+  "use_report_chart": 0,
+  "x_field": "month",
+  "y_axis": [
+   {
+    "color": "#D97757",
+    "doctype": "Dashboard Chart Field",
+    "y_field": "this_year"
+   },
+   {
+    "color": "#8D99A6",
+    "doctype": "Dashboard Chart Field",
+    "y_field": "last_year"
+   }
+  ]
+ }
+]
