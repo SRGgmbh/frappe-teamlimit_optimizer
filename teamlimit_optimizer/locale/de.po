@@ -853,3 +853,9 @@ msgstr "Nur {0} oder ein Manager kann diese Aufgabe freigeben."
 
 msgid "This guide is part of the app and is overwritten on every update. Changes made here will be lost; create a new guide instead."
 msgstr "Diese Anleitung gehört zur App und wird bei jedem Update überschrieben. Änderungen hier gehen verloren; lege stattdessen eine neue Anleitung an."
+
+msgid "Teamlimit Optimizer – for Claude by Anthropic"
+msgstr "Teamlimit Optimierer – für Claude von Anthropic"
+
+msgid "Every member of the Claude Team plan has their own limits (5-hour window and week) that cannot be transferred. Anyone who reaches their limit hands a <b>task</b> to a colleague who still has capacity. <b>Who can help?</b> shows who that is right now – own Claude Team first, premium seats only if needed. Anyone with budget left takes a ready-made task from the <b>task pool</b>, so that no budget expires at the end of the week."
+msgstr "Jedes Mitglied im Claude-Team-Plan hat eigene Limits (5-Stunden-Fenster und Woche), die sich nicht übertragen lassen. Wer an seiner Grenze ist, gibt eine <b>Aufgabe</b> an einen Kollegen ab, der noch Luft hat. <b>Wen frage ich?</b> zeigt, wer das gerade ist – zuerst im eigenen Claude Team, Premium-Nutzer nur wenn nötig. Wer Budget übrig hat, übernimmt eine fertig formulierte Aufgabe aus dem <b>Aufgabenpool</b>, damit am Ende der Woche kein Budget verfällt."

@@ -26,7 +26,22 @@
     "doctype": "Dashboard Chart Field",
     "y_field": "task_quote"
    }
-  ]
+  ],
+  "roles": [
+   {
+    "doctype": "Has Role",
+    "role": "Claude Usage Manager"
+   },
+   {
+    "doctype": "Has Role",
+    "role": "Claude Usage User"
+   },
+   {
+    "doctype": "Has Role",
+    "role": "Claude Usage Team"
+   }
+  ],
+  "modified": "2026-11-10 14:00:00.000000"
  },
  {
   "chart_name": "Session Limits per Week",
@@ -61,7 +76,22 @@
     "doctype": "Dashboard Chart Field",
     "y_field": "crit"
    }
-  ]
+  ],
+  "roles": [
+   {
+    "doctype": "Has Role",
+    "role": "Claude Usage Manager"
+   },
+   {
+    "doctype": "Has Role",
+    "role": "Claude Usage User"
+   },
+   {
+    "doctype": "Has Role",
+    "role": "Claude Usage Team"
+   }
+  ],
+  "modified": "2026-11-10 14:00:00.000000"
  },
  {
   "chart_name": "Avg Usage 12 Months",
@@ -90,7 +120,22 @@
     "doctype": "Dashboard Chart Field",
     "y_field": "prev_peak"
    }
-  ]
+  ],
+  "roles": [
+   {
+    "doctype": "Has Role",
+    "role": "Claude Usage Manager"
+   },
+   {
+    "doctype": "Has Role",
+    "role": "Claude Usage User"
+   },
+   {
+    "doctype": "Has Role",
+    "role": "Claude Usage Team"
+   }
+  ],
+  "modified": "2026-11-10 14:00:00.000000"
  },
  {
   "chart_name": "Year Comparison Usage",
@@ -119,6 +164,21 @@
     "doctype": "Dashboard Chart Field",
     "y_field": "last_year"
    }
-  ]
+  ],
+  "roles": [
+   {
+    "doctype": "Has Role",
+    "role": "Claude Usage Manager"
+   },
+   {
+    "doctype": "Has Role",
+    "role": "Claude Usage User"
+   },
+   {
+    "doctype": "Has Role",
+    "role": "Claude Usage Team"
+   }
+  ],
+  "modified": "2026-11-10 14:00:00.000000"
  }
 ]

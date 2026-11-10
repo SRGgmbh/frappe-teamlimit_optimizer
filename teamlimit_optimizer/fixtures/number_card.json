@@ -12,7 +12,9 @@
   "show_full_number": 1,
   "show_percentage_stats": 0,
   "stats_time_interval": "Daily",
-  "type": "Custom"
+  "type": "Custom",
+  "document_type": "Claude Team",
+  "modified": "2026-11-10 14:00:00.000000"
  },
  {
   "color": "#2E8540",
@@ -27,7 +29,9 @@
   "show_full_number": 1,
   "show_percentage_stats": 0,
   "stats_time_interval": "Daily",
-  "type": "Custom"
+  "type": "Custom",
+  "document_type": "Claude Team",
+  "modified": "2026-11-10 14:00:00.000000"
  },
  {
   "color": "#E24C4C",
@@ -42,7 +46,9 @@
   "show_full_number": 1,
   "show_percentage_stats": 0,
   "stats_time_interval": "Daily",
-  "type": "Custom"
+  "type": "Custom",
+  "document_type": "Claude Team",
+  "modified": "2026-11-10 14:00:00.000000"
  },
  {
   "color": "#2E8540",
@@ -57,7 +63,9 @@
   "show_full_number": 1,
   "show_percentage_stats": 0,
   "stats_time_interval": "Daily",
-  "type": "Custom"
+  "type": "Custom",
+  "document_type": "Claude Team",
+  "modified": "2026-11-10 14:00:00.000000"
  },
  {
   "color": "#D97757",
@@ -72,7 +80,9 @@
   "show_full_number": 1,
   "show_percentage_stats": 0,
   "stats_time_interval": "Daily",
-  "type": "Custom"
+  "type": "Custom",
+  "document_type": "Claude Team",
+  "modified": "2026-11-10 14:00:00.000000"
  },
  {
   "color": "#E24C4C",
@@ -87,7 +97,9 @@
   "show_full_number": 1,
   "show_percentage_stats": 0,
   "stats_time_interval": "Daily",
-  "type": "Custom"
+  "type": "Custom",
+  "document_type": "Claude Team",
+  "modified": "2026-11-10 14:00:00.000000"
  },
  {
   "color": "#5E64FF",
@@ -102,7 +114,9 @@
   "show_full_number": 1,
   "show_percentage_stats": 0,
   "stats_time_interval": "Daily",
-  "type": "Custom"
+  "type": "Custom",
+  "document_type": "Claude Team",
+  "modified": "2026-11-10 14:00:00.000000"
  },
  {
   "color": "#8D99A6",
@@ -117,7 +131,9 @@
   "show_full_number": 1,
   "show_percentage_stats": 0,
   "stats_time_interval": "Daily",
-  "type": "Custom"
+  "type": "Custom",
+  "document_type": "Claude Team",
+  "modified": "2026-11-10 14:00:00.000000"
  },
  {
   "color": "#8D99A6",
@@ -132,6 +148,8 @@
   "show_full_number": 1,
   "show_percentage_stats": 0,
   "stats_time_interval": "Daily",
-  "type": "Custom"
+  "type": "Custom",
+  "document_type": "Claude Team",
+  "modified": "2026-11-10 14:00:00.000000"
  }
 ]
