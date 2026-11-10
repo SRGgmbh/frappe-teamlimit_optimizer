@@ -1,5 +1,5 @@
 ---
-name: aufgabe-einstellen
+name: pool-aufgabe-einstellen
 description: Formuliert gemeinsam mit dem Nutzer eine Aufgabe für den Teamlimit-Aufgabenpool so, dass ein Kollege sie ohne Rückfrage in Claude ausführen kann. Nutzen, wenn der Nutzer eine Aufgabe „in den Pool stellen“, „für den Aufgabenpool vorbereiten“ oder „an jemanden mit Budget abgeben“ will.
 ---
 

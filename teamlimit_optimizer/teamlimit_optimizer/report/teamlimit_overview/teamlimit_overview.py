@@ -3,7 +3,7 @@
 
 import frappe
 from frappe import _
-from frappe.utils import add_days, add_months, add_to_date, get_datetime, now_datetime, time_diff_in_hours
+from frappe.utils import add_to_date, get_datetime, now_datetime, time_diff_in_hours
 
 
 def _eff(pct, reset, now):
@@ -57,7 +57,7 @@ def execute(filters=None):
 			{
 				"member": m.name,
 				"team": m.claude_team,
-				"seat": _(m.seat_type),
+				"seat": _(m.seat_type or "Unknown"),
 				"five": f5,
 				"five_reset": m.five_reset,
 				"week": fw,

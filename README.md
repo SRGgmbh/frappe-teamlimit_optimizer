@@ -70,7 +70,7 @@ On Frappe Cloud, add the repository with the branch `version-16` to a private be
 
 4. Every user signs in to Claude Code once.
 5. Assign the roles **Claude Usage Manager / User / Team** and create your **Claude Teams** and **Claude Projects**.
-6. Upload the skills to your Claude organisation (see below).
+6. Create the skills in your Claude organisation (see below).
 
 Detailed step-by-step instructions – GPO, manual installation without the installer, interval, roles, writing good pool tasks – are part of the app: **Teamlimit Optimizer → Guides**. The in-app guides are currently available in German.
 
@@ -90,11 +90,11 @@ The reporting scripts can also be downloaded from **Teamlimit Settings → Repor
 
 | Purpose | English | German |
 | --- | --- | --- |
-| Write a task for the pool together with Claude | [`pool-task-create`](skills/en/pool-task-create/SKILL.md) | [`aufgabe-einstellen`](skills/de/aufgabe-einstellen/SKILL.md) |
-| Complete a task: check criteria, share result, write summary | [`pool-task-complete`](skills/en/pool-task-complete/SKILL.md) | [`aufgabe-abschliessen`](skills/de/aufgabe-abschliessen/SKILL.md) |
-| Instruction for other AI assistants | [`pool-task-create-other-ai.md`](skills/en/pool-task-create-other-ai.md) | [`aufgabe-einstellen-andere-ki.md`](skills/de/aufgabe-einstellen-andere-ki.md) |
+| Write a task for the pool together with Claude | [`pool-task-create`](skills/en/pool-task-create/SKILL.md) | [`pool-aufgabe-einstellen`](skills/de/pool-aufgabe-einstellen/SKILL.md) |
+| Complete a task: check criteria, share result, write summary | [`pool-task-complete`](skills/en/pool-task-complete/SKILL.md) | [`pool-aufgabe-abschliessen`](skills/de/pool-aufgabe-abschliessen/SKILL.md) |
+| Instruction for other AI assistants | [`pool-task-create-other-ai.md`](skills/en/pool-task-create-other-ai.md) | [`pool-aufgabe-einstellen-andere-ki.md`](skills/de/pool-aufgabe-einstellen-andere-ki.md) |
 
-Ready-to-upload ZIP files are in [`skills/dist`](skills/dist). Change the Frappe address in the create skill before uploading. Both languages produce the same hand-over block, and the app reads English and German blocks.
+Create the skills manually in your Claude organisation (organisation settings → skills) by copying the `SKILL.md` content, and enter your own Frappe address in the create skill. Both languages produce the same hand-over block, and the app reads English and German blocks.
 
 ## Roles
 
@@ -102,8 +102,8 @@ Ready-to-upload ZIP files are in [`skills/dist`](skills/dist). Change the Frappe
 | --- | --- |
 | System Manager | Setup, Claude Teams, assignments, guides, scripts |
 | Claude Usage Manager | Overview, statistics, expired budget and “Who can help?” |
-| Claude Usage User | “Who can help?” across all teams, task pool |
-| Claude Usage Team | “Who can help?” within the own Claude Team only |
+| Claude Usage User | “Who can help?”, expired budget and statistics across all teams, task pool |
+| Claude Usage Team | “Who can help?” and expired budget within the own Claude Team only, task pool |
 | Claude Usage Ingest | Only the ingest user of the reporting scripts |
 
 Any desk user can create tasks for the pool.
@@ -121,6 +121,13 @@ The source language is English. A complete German translation is included in [`t
 ## Contributing
 
 Issues and pull requests are welcome at [github.com/SRGgmbh/frappe-teamlimit_optimizer](https://github.com/SRGgmbh/frappe-teamlimit_optimizer/issues). Please base pull requests on `develop`.
+
+Run the tests on a development site before opening a pull request:
+
+```bash
+bench --site <site> set-config allow_tests true
+bench --site <site> run-tests --app teamlimit_optimizer
+```
 
 ## License
 

@@ -435,3 +435,6 @@ FodyWeavers.xsd
 tags
 node_modules
 __pycache__
+
+# Local project knowledge (not versioned)
+.agent/

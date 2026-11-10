@@ -162,7 +162,7 @@
   }
  ],
  "index_web_pages_for_search": 0,
- "modified": "2026-11-07 12:00:00.000000",
+ "modified": "2026-11-10 12:00:00.000000",
  "modified_by": "Administrator",
  "module": "Teamlimit Optimizer",
  "name": "Claude Account",
@@ -186,6 +186,14 @@
    "read": 1,
    "report": 1,
    "role": "Claude Usage Manager"
+  },
+  {
+   "report": 1,
+   "role": "Claude Usage User"
+  },
+  {
+   "report": 1,
+   "role": "Claude Usage Team"
   }
  ],
  "row_format": "Dynamic",

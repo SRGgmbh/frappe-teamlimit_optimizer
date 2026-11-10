@@ -1,5 +1,5 @@
 ---
-name: aufgabe-abschliessen
+name: pool-aufgabe-abschliessen
 description: Schließt eine Aufgabe aus dem Teamlimit-Aufgabenpool sauber ab – prüft die Fertig-Kriterien, sorgt für ein geteiltes Ergebnis und erstellt die Ergebnis-Zusammenfassung für Frappe. Nutzen, wenn ein Chat mit „[Teamlimit-Aufgabe …]“ oder „[Teamlimit task …]“ begonnen hat und der Nutzer die Aufgabe abschließen will oder sagt, sie sei fertig.
 ---
 

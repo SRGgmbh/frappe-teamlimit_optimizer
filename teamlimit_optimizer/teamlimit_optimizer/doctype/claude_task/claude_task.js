@@ -90,7 +90,7 @@ function tl_act(frm, action, extra) {
 }
 
 function tl_prompt(frm) {
-	const url = `${window.location.origin}/app/claude-task/${frm.doc.name}`;
+	const url = `${window.location.origin}${frappe.utils.get_form_link("Claude Task", frm.doc.name)}`;
 	return (
 		`[${__("Teamlimit task")} ${frm.doc.name}: ${frm.doc.title}]\n` +
 		`${__("Task in the pool")}: ${url}\n\n` +
@@ -163,7 +163,7 @@ frappe.ui.form.on("Claude Task", {
 		}
 		if (st === "In Progress" || st === "Question") {
 			frm.add_custom_button(__("Done"), async () => {
-				const acc = await frappe.db.get_value("Claude Account", { frappe_user: frappe.session.user }, "name");
+				const acc = await frappe.xcall("teamlimit_optimizer.api.my_claude_account");
 				frappe.prompt(
 					[
 						{
@@ -172,7 +172,7 @@ frappe.ui.form.on("Claude Task", {
 							fieldtype: "Data",
 							options: "Email",
 							reqd: 1,
-							default: (acc && acc.message && acc.message.name) || "",
+							default: acc || "",
 						},
 						{
 							fieldname: "result_url",

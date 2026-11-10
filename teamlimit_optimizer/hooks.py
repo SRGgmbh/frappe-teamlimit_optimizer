@@ -7,13 +7,14 @@ app_license = "mit"
 required_apps = ["frappe"]
 
 app_logo_url = "/assets/teamlimit_optimizer/images/logo.svg"
+app_home = "/desk/teamlimit-optimizer"
 
 add_to_apps_screen = [
 	{
 		"name": "teamlimit_optimizer",
 		"logo": "/assets/teamlimit_optimizer/images/logo.svg",
 		"title": "Teamlimit Optimizer",
-		"route": "/app/teamlimit-optimizer",
+		"route": app_home,
 	}
 ]
 
@@ -24,5 +25,5 @@ fixtures = [
 	{"dt": "Number Card", "filters": [["module", "=", "Teamlimit Optimizer"]]},
 	{"dt": "Dashboard Chart", "filters": [["module", "=", "Teamlimit Optimizer"]]},
 	{"dt": "Notification", "filters": [["module", "=", "Teamlimit Optimizer"]]},
-	{"dt": "Teamlimit Guide"},
+	{"dt": "Teamlimit Guide", "filters": [["name", "like", "TLG-%"]]},
 ]

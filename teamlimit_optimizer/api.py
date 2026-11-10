@@ -127,6 +127,7 @@ def task(task, action, **kwargs):
 	user = frappe.session.user
 	frappe.db.get_value("Claude Task", task, "status", for_update=True)
 	doc = frappe.get_doc("Claude Task", task)
+	doc.check_permission("write")
 	now = now_datetime()
 
 	if action == "claim":
@@ -139,6 +140,8 @@ def task(task, action, **kwargs):
 			doc.claimed_by = user
 			doc.claimed_at = now
 	elif action == "release":
+		if doc.claimed_by and doc.claimed_by != user and not _has_role("Claude Usage Manager", "System Manager"):
+			frappe.throw(_("Only {0} or a manager can release this task.").format(doc.claimed_by), frappe.PermissionError)
 		doc.status = "Open"
 		doc.claimed_by = None
 		doc.claimed_at = None
@@ -163,6 +166,12 @@ def task(task, action, **kwargs):
 	return {"status": doc.status, "claimed_by": doc.claimed_by}
 
 
+@frappe.whitelist()
+def my_claude_account():
+	"""The Claude account linked to the current Frappe user, used to prefill forms."""
+	return frappe.db.get_value("Claude Account", {"frappe_user": frappe.session.user}, "name")
+
+
 def _month_avg(year, month):
 	start = f"{year:04d}-{month:02d}-01"
 	end = add_days(frappe.utils.add_months(start, 1), -1)
@@ -177,6 +186,8 @@ def _month_avg(year, month):
 @frappe.whitelist()
 def kpi(filters=None):
 	"""Values for the number cards on the dashboard. Contains no personal data."""
+	if frappe.get_cached_value("User", frappe.session.user, "user_type") != "System User":
+		frappe.throw(_("Not permitted"), frappe.PermissionError)
 	if isinstance(filters, str):
 		filters = json.loads(filters or "{}")
 	key = (filters or {}).get("kpi")

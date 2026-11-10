@@ -3,7 +3,7 @@
 
 import frappe
 from frappe import _
-from frappe.utils import add_days, add_months, add_to_date, get_datetime, now_datetime, time_diff_in_hours
+from frappe.utils import get_datetime, now_datetime, time_diff_in_hours
 
 
 def _eff(pct, reset, now):
@@ -70,7 +70,7 @@ def execute(filters=None):
 		result.append({"member": _("No current information"), "_section": 1})
 		for m in stale_list:
 			last_free = round(max(0, min(100 - (m.five_pct or 0), 100 - (m.week_pct or 0))), 1)
-			result.append({"member": m.name, "team": m.claude_team, "seat": _(m.seat_type), "free": last_free, "stage": _("No current information"), "last_seen": m.last_seen, "_stale": 1})
+			result.append({"member": m.name, "team": m.claude_team, "seat": _(m.seat_type or "Unknown"), "free": last_free, "stage": _("No current information"), "last_seen": m.last_seen, "_stale": 1})
 	expected = s.expected_accounts or 0
 	known = frappe.db.count("Claude Account")
 	if expected > known:

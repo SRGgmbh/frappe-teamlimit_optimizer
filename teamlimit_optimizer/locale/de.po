@@ -35,9 +35,6 @@ msgstr "Administratoren"
 msgid "All"
 msgstr "Alle"
 
-msgid "All accounts ({0})"
-msgstr "Alle Konten ({0})"
-
 msgid "Also Works on Weekends"
 msgstr "Arbeitet auch am Wochenende"
 
@@ -85,9 +82,6 @@ msgstr "Größter Helfer: {0} mit {1} Punkten."
 
 msgid "CW{0}"
 msgstr "KW{0}"
-
-msgid "Cause"
-msgstr "Ursache"
 
 msgid "Chat: starts in the selected Claude project, the prompt is pasted from the clipboard. Cowork and Claude Code: start without a project, the prompt is prefilled."
 msgstr "Chat: startet im gewählten Claude-Projekt, der Prompt wird über die Zwischenablage eingefügt. Cowork und Claude Code: starten ohne Projekt, der Prompt steht direkt im Eingabefeld."
@@ -398,9 +392,6 @@ msgstr "Offen"
 msgid "Open Tasks"
 msgstr "Offene Aufgaben"
 
-msgid "Open Tasks at the Resets"
-msgstr "Offene Aufgaben zu den Resets"
-
 msgid "Open at Week End"
 msgstr "Offen zum Wochenende"
 
@@ -543,7 +534,7 @@ msgid "Result link (shared chat, artifact or file)"
 msgstr "Ergebnis-Link (geteilter Chat, Artefakt oder Datei)"
 
 msgid "Result summary (from the skill “pool-task-complete”)"
-msgstr "Ergebnis-Zusammenfassung (vom Skill „aufgabe-abschliessen“)"
+msgstr "Ergebnis-Zusammenfassung (vom Skill „pool-aufgabe-abschliessen“)"
 
 msgid "Right now nobody has at least {0} % free."
 msgstr "Gerade hat niemand mindestens {0} % frei."
@@ -725,14 +716,11 @@ msgstr "Wochen-Reset"
 msgid "Weeks"
 msgstr "Wochen"
 
-msgid "Weeks of the last 8 weeks with expired budget. “Tasks open”: tasks were waiting in the pool at at least one reset of the week, listed per account. “No tasks in the pool”: no task was waiting at any reset of the week, one total row for all accounts; “Expired %” is the average there. “= Standard weekly budgets” converts into full budgets of a standard seat: 100 % of a standard seat = 1, 100 % of a premium seat = 5."
-msgstr "Wochen der letzten 8 Wochen mit verfallenem Budget. „Aufgaben offen“: zu mindestens einem Reset der Woche lagen Aufgaben im Pool, je Konto aufgeführt. „Keine Aufgaben im Pool“: zu keinem Reset der Woche lag eine Aufgabe im Pool, eine Summenzeile über alle Konten; „Verfallen %“ ist dort der Durchschnitt. „= Standard-Wochenbudgets“ rechnet in volle Budgets eines Standard-Sitzes um: 100 % eines Standard-Sitzes = 1, 100 % eines Premium-Sitzes = 5."
-
 msgid "What is unclear?"
 msgstr "Was ist unklar?"
 
 msgid "When the task is done, use the skill “pool-task-complete”."
-msgstr "Wenn die Aufgabe erledigt ist, nutze den Skill „aufgabe-abschliessen“."
+msgstr "Wenn die Aufgabe erledigt ist, nutze den Skill „pool-aufgabe-abschliessen“."
 
 msgid "Who Can Help"
 msgstr "Wen frage ich?"
@@ -823,3 +811,42 @@ msgstr "Im Aufgabenpool warten {0} offene Aufgaben."
 
 msgid "“Who can help?” only suggests colleagues with at least this much of their 5-h window and week free. Premium seats appear only if no standard seat reaches this value."
 msgstr "„Wen frage ich?“ schlägt nur Kollegen vor, die mindestens so viel ihres 5-h-Fensters und ihrer Woche frei haben. Premium-Sitze erscheinen erst, wenn kein Standard-Sitz diesen Wert erreicht."
+
+msgid "Administration"
+msgstr "Verwaltung"
+
+msgid "Start"
+msgstr "Starten"
+
+msgid "By Employee"
+msgstr "Nach Mitarbeiter"
+
+msgid "By Pool"
+msgstr "Nach Pool"
+
+msgid "From"
+msgstr "Von"
+
+msgid "To"
+msgstr "Bis"
+
+msgid "Accounts with Reset"
+msgstr "Konten mit Reset"
+
+msgid "Ø Expired %"
+msgstr "Ø Verfallen %"
+
+msgid "Open Tasks at Reset"
+msgstr "Offene Aufgaben beim Reset"
+
+msgid "Pool at Reset"
+msgstr "Pool beim Reset"
+
+msgid "Every Claude week of the last {0} weeks in which an account let budget expire, evaluated at that account's own reset. Red: tasks were waiting in the pool when the budget expired – this budget could have been used. Green: the pool was empty at that moment. “= Standard weekly budgets” converts into full budgets of a standard seat: 100 % of a standard seat = 1, 100 % of a premium seat = 5."
+msgstr "Jede Claude-Woche der letzten {0} Wochen, in der bei einem Konto Budget verfallen ist, ausgewertet zum eigenen Reset des Kontos. Rot: Als das Budget verfiel, warteten Aufgaben im Pool – dieses Budget hätte genutzt werden können. Grün: Der Pool war in diesem Moment leer. „= Standard-Wochenbudgets“ rechnet in volle Budgets eines Standard-Sitzes um: 100 % eines Standard-Sitzes = 1, 100 % eines Premium-Sitzes = 5."
+
+msgid "Calendar weeks (Monday to Sunday) of the last {0} completed weeks in which no task was waiting in the pool at any time: {1} weeks, {2} standard weekly budgets expired in them. These weeks lacked work for the team – this is the potential a well-filled pool could have used. Each account counts in the week of its own reset."
+msgstr "Kalenderwochen (Montag bis Sonntag) der letzten {0} abgeschlossenen Wochen, in denen zu keinem Zeitpunkt eine Aufgabe im Pool wartete: {1} Wochen, darin {2} Standard-Wochenbudgets verfallen. In diesen Wochen fehlte dem Team Arbeit – das ist das Potenzial, das ein gut gefüllter Pool hätte nutzen können. Jedes Konto zählt in der Woche seines eigenen Resets."
+
+msgid "Only {0} or a manager can release this task."
+msgstr "Nur {0} oder ein Manager kann diese Aufgabe freigeben."

@@ -25,11 +25,11 @@
  "creation": "2026-11-07 12:00:00.000000",
  "doctype": "Workspace",
  "for_user": "",
- "icon": "dashboard",
+ "icon": "gauge",
  "is_hidden": 0,
  "label": "Teamlimit Optimizer",
  "links": [],
- "modified": "2026-11-07 12:00:00.000000",
+ "modified": "2026-11-10 12:00:00.000000",
  "modified_by": "Administrator",
  "module": "Teamlimit Optimizer",
  "name": "Teamlimit Optimizer",
@@ -192,5 +192,7 @@
    "type": "DocType"
   }
  ],
- "title": "Teamlimit Optimizer"
+ "standard": 1,
+ "title": "Teamlimit Optimizer",
+ "type": "Workspace"
 }
