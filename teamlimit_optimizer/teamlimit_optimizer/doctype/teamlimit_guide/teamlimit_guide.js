@@ -30,6 +30,13 @@ frappe.ui.form.on("Teamlimit Guide", {
 				: `<div class="teamlimit-guide" style="max-width: 860px; font-size: 15px; line-height: 1.6">${frappe.markdown(frm.doc.content || "")}</div>`
 		);
 		if (!editing) tl_copy_buttons($w);
+		// guides shipped with the app are re-imported on every update
+		if (frappe.user.has_role("System Manager") && (frm.doc.name || "").startsWith("TLG-")) {
+			frm.set_intro(
+				__("This guide is part of the app and is overwritten on every update. Changes made here will be lost; create a new guide instead."),
+				"orange"
+			);
+		}
 		if (frappe.user.has_role("System Manager")) {
 			frm.add_custom_button(editing ? __("View") : __("Edit"), () => {
 				frm.__teamlimit_edit = !editing;

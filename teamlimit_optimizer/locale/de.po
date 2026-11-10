@@ -850,3 +850,6 @@ msgstr "Kalenderwochen (Montag bis Sonntag) der letzten {0} abgeschlossenen Woch
 
 msgid "Only {0} or a manager can release this task."
 msgstr "Nur {0} oder ein Manager kann diese Aufgabe freigeben."
+
+msgid "This guide is part of the app and is overwritten on every update. Changes made here will be lost; create a new guide instead."
+msgstr "Diese Anleitung gehört zur App und wird bei jedem Update überschrieben. Änderungen hier gehen verloren; lege stattdessen eine neue Anleitung an."

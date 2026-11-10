@@ -15,6 +15,8 @@ Every member of a Claude Team plan has their own usage limits – a 5-hour sessi
 
 > **Not an official Anthropic product.** Claude and Anthropic are trademarks of Anthropic, PBC. This app only refers to them descriptively.
 
+> **Built with AI.** The entire app – code, scripts, translations, guides, skills and this README – was created with Claude by Anthropic, directed and reviewed by SRG - Systemhaus GmbH.
+
 ## How it works
 
 A small reporting script runs hourly on every computer (Windows: PowerShell via the Task Scheduler, hidden; Linux: systemd user timer or cron). It reads the signed-in user's usage from the local Claude Code sign-in and sends **only** the e-mail address, seat tier, percentages and reset times to Frappe. The Claude token never leaves the device.
@@ -112,6 +114,7 @@ Any desk user can create tasks for the pool.
 
 - The usage values come from an endpoint that Claude Code uses internally and that is **not officially documented** by Anthropic. It may change or be rate-limited at any time; the reporting part is deliberately small so it can be replaced.
 - All reports are shared by design: everyone with access sees everyone's usage. Members who should not appear simply do not get the script. Check works council and data protection requirements in your organisation before rollout.
+- The in-app guides (`TLG-…`) are part of the app and are **overwritten on every update** (`bench migrate`). Only System Managers can edit them; changes made on the site are lost. Create additional guides under a new name or contribute changes to the repository.
 - Reports are protected by the shared ingest key, not per person. A user could deliberately report wrong values for someone else; for the purpose of the app this was considered acceptable.
 
 ## Translations
